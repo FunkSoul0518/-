@@ -1,0 +1,431 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*css reset */
+
+* {
+    box-sizing: border-box;
+
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+
+
+}
+
+h2>span {
+    font-size: 24px;
+    color: #A00404;
+    margin-left: 16px;
+}
+
+
+.wrap {
+    width: 1920px;
+    margin: 0 auto;
+
+}
+
+.header {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    text-align: left;
+    font-size: 80px;
+    font-family: 'Space Mono', monospace;
+    border-bottom: 2px solid #000000;
+    padding: 48px 0 24px 0;
+}
+
+.pic {
+    padding: 48px 0;
+}
+
+.pic img {
+    display: block;
+}
+
+.intro .title {
+    border-bottom: 1px solid #000;
+    padding: 8px 0;
+}
+
+.inform {
+    position: relative;
+    font-size: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 16px 0 0 48px;
+    line-height: 30px;
+}
+
+.inform::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #96A9C4;
+    border-radius: 50%;
+    top: 22px;
+    left: 16px;
+}
+
+.inform .box1 {
+    margin-bottom: 24px;
+}
+
+.inform .box2 {
+    margin-bottom: 79px;
+}
+
+.school {
+    padding: 16px 0 0 48px;
+    font-size: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-bottom: 72px;
+}
+
+.school li {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.school li::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #96A9C4;
+    border-radius: 50%;
+    top: 5px;
+    left: -32px;
+    z-index: 2;
+}
+
+.school .asideline:after {
+    content: '';
+    position: absolute;
+    height: 66px;
+    width: 2px;
+    background: #96A9C4;
+    left: -25px;
+    bottom: -50px;
+}
+
+/* .school::before {
+    content: '';
+    position: absolute;
+    height: 66px;
+    width: 2px;
+    background: #96A9C4;
+    z-index: 1;
+    left: 383px;
+    top: 1080px;
+} */
+
+
+
+
+/* main */
+
+.skillsbox {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    height: 494px;
+    background-color: #415165;
+    margin-bottom: 72px;
+}
+
+.skills-bg {
+    position: absolute;
+    width: 1920px;
+    height: 360px;
+    background: #96A9C4;
+    top: 0;
+    bottom: 0;
+    left: -360px;
+    margin: auto;
+    z-index: -1;
+}
+
+
+
+.skills-title {
+    text-align: center;
+    color: white;
+    padding: 24px 0 8px 0;
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.skills-title::before {
+    content: '';
+    position: absolute;
+    width: 996px;
+    height: 1px;
+    background-color: #FFFFFF;
+    bottom: -2px;
+    left: 102px;
+
+}
+
+.skills-content {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-list {
+    padding-left: 20px;
+    position: relative;
+
+}
+
+.skills-list::before {
+    content: '';
+    position: absolute;
+    height: 321px;
+    width: 1px;
+    background: #96A9C4;
+    top: 0;
+    left: 0;
+}
+
+.skills-list>li {
+    line-height: 45px;
+    font-size: 24px;
+    color: white;
+}
+
+
+/* work */
+
+.work {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.work h3 {
+    font-size: 24px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.work p {
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    width: 50%;
+    word-break: break-all;
+}
+
+.work img {
+    margin: 8px 0 8px 0;
+}
+
+.work-title {
+    border-bottom: 1px solid #000;
+    padding: 8px 0;
+    margin-bottom: 22px;
+}
+
+.work-content {
+    padding-left: 48px;
+    position: relative;
+}
+
+.work-content::before {
+    content: '';
+    position: absolute;
+    height: 101%;
+    width: 2px;
+    background: #96A9C4;
+    top: 0;
+    left: 24px;
+}
+
+
+.workcontent-resume>li {
+    margin-top: 32px;
+}
+
+/* footer */
+.footer {
+    width: 1920px;
+    background-color: #415165;
+    padding-bottom: 48px;
+
+}
+
+.footer .title {
+    text-align: center;
+    color: white;
+    padding: 24px 0 8px 0;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.footer .title:before {
+    content: '';
+    position: absolute;
+    width: 1200px;
+    height: 1px;
+    background-color: #FFFFFF;
+    bottom: -2px;
+    left: 360px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.contact a {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Noto Serif TC', serif;
+    color: white;
+    margin-top: 16px;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-icon>a+a {
+    margin-left: 24px;
+}
